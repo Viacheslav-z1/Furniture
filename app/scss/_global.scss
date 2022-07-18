@@ -1,0 +1,15 @@
+body{
+  font-size: 18px;
+  line-height: 22px;
+  @extend %prox-400;
+  color: #1E2E36;
+}
+
+
+
+
+.container{
+  max-width: 1840px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
