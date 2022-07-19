@@ -13,3 +13,49 @@ body{
   padding: 0 10px;
   margin: 0 auto;
 }
+
+
+.title{
+  font-size: 48px;
+  line-height: 60px;
+  @extend %prox-700;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  &::before{
+    content: '';
+    width: 20px;
+    position: absolute;
+    height: 100%;
+    background-color: #44C697;
+    left: 0;
+    z-index: -1;
+  }
+}
+.title-wrapper{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+@media(max-width: 750px) {
+  .title {
+    font-size: 36px;
+    line-height: 40px;
+    &::before{
+      width: 10px;
+    }
+  }
+}
+@media(max-width: 500px) {
+  .title {
+    font-size: 26px;
+    line-height: 40px;
+    &::before {
+        width: 5px;
+      }
+  }
+  .title-wrapper{
+    margin-bottom: 20px;
+  }
+}
