@@ -64,4 +64,46 @@ $(function () {
   });
   
   var mixer = mixitup('.category__items-wrapper');
+
+
+  $(".menu a ").on("click", function (event) {
+    event.preventDefault();
+
+    var id = $(this).attr('href'),
+
+      top = $(id).offset().top;
+    $('body,html').animate({ scrollTop: top }, 1500);
+  });
+  $(".header__botoom-btn").on("click", function (event) {
+    event.preventDefault();
+
+    var id = $(this).attr('href'),
+
+      top = $(id).offset().top;
+    $('body,html').animate({ scrollTop: top }, 1500);
+  });
+  $(".header__categories a ").on("click", function (event) {
+    event.preventDefault();
+
+    var id = $(this).attr('href'),
+
+      top = $(id).offset().top;
+    $('body,html').animate({ scrollTop: top }, 1500);
+  });
+  $(".footer__list a").on("click", function (event) {
+    event.preventDefault();
+
+    var id = $(this).attr('href'),
+
+      top = $(id).offset().top;
+    $('body,html').animate({ scrollTop: top }, 1500);
+  });
+  $(".footer__up").on("click", function (event) {
+    event.preventDefault();
+
+    var id = $(this).attr('href'),
+
+      top = $(id).offset().top;
+    $('body,html').animate({ scrollTop: top }, 1500);
+  });
 })
